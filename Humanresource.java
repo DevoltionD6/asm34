@@ -82,15 +82,15 @@ public class Humanresource {
         totalStaff.add(manager12);
 
         // thong bao chuc nang
-        notification();
 
         // thuc hien cac chuc nang cua ung dung
         do {
+            notification();
             System.out.println("Lua chon:");
-            allFuntion = sc.nextInt();
+            allFuntion = Integer.parseInt(sc.nextLine());
             while (allFuntion < 0 || allFuntion > 7) {
                 System.out.println("Nhap lai lua chon");
-                allFuntion = sc.nextInt();
+                allFuntion = Integer.parseInt(sc.nextLine());
             }
             switch (allFuntion) {
                 case 1:
@@ -164,10 +164,10 @@ public class Humanresource {
             System.out.println("4. Marketing");
             System.out.println("0. Back to Menu");
             System.out.println("");
-            allDepartment = sc.nextInt();
+            allDepartment = Integer.parseInt(sc.nextLine());
             while (allDepartment < 0 || allDepartment > 4) {
                 System.out.println("Nhap lai bo phan");
-                allDepartment = sc.nextInt();
+                allDepartment = Integer.parseInt(sc.nextLine());
             }
             switch (allDepartment) {
                 case 1:
@@ -213,7 +213,7 @@ public class Humanresource {
             System.out.println("1. Them nhan vien");
             System.out.println("2. Them quan ly");
             System.out.println("0. Back to menu");
-            typeOfStaff = sc.nextInt();
+            typeOfStaff = Integer.parseInt(sc.nextLine());
             switch (typeOfStaff) {
                 case 1:
                     System.out.println(" - Them nhan vien -");
@@ -230,13 +230,13 @@ public class Humanresource {
                         }
                     }
                     System.out.println("Nhap ten nhan vien:");
-                    sc.nextLine();
+                    sc.next();
                     String nameEmployee = sc.nextLine();
                     System.out.println("Nhap tuoi nhan vien:");
-                    int ageEmployee = sc.nextInt();
+                    int ageEmployee = Integer.parseInt(sc.nextLine());
                     while (ageEmployee < 0) {
                         System.out.println("Nhap lai tuoi:");
-                        ageEmployee = sc.nextInt();
+                        ageEmployee = Integer.parseInt(sc.nextLine());
                     }
                     System.out.println("Nhap he so luong:");
                     double coefOfSalary = sc.nextDouble();
@@ -257,7 +257,7 @@ public class Humanresource {
                         System.out.println("3. Nhan vien ban hang");
                         System.out.println("4. Nhan vien truyen thong");
                         System.out.println("5. Them bo phan moi");
-                        newDepartmentEmployee = sc.nextInt();
+                        newDepartmentEmployee = Integer.parseInt(sc.nextLine());
                         switch (newDepartmentEmployee) {
                             case 1:
                                 departmentEmployee = "Lap trinh vien";
@@ -282,10 +282,10 @@ public class Humanresource {
                         }
                     } while (newDepartmentEmployee < 1 || newDepartmentEmployee > 5);
                     System.out.println("Nhap so ngay nghi phep");
-                    int leaveDayEmployee = sc.nextInt();
+                    int leaveDayEmployee = Integer.parseInt(sc.nextLine());
                     while (leaveDayEmployee < 0) {
                         System.out.println("Nhap lai so ngay nghi phep");
-                        leaveDayEmployee = sc.nextInt();
+                        leaveDayEmployee = Integer.parseInt(sc.nextLine());
 
                     }
                     System.out.println("Nhap so gio lam them:");
@@ -328,16 +328,16 @@ public class Humanresource {
                     sc.nextLine();
                     String nameManager = sc.nextLine();
                     System.out.println("Nhap tuoi nhan vien:");
-                    int ageManager = sc.nextInt();
+                    int ageManager = Integer.parseInt(sc.nextLine());
                     while (ageManager < 0) {
                         System.out.println("Nhap lai tuoi nhan vien:");
-                        ageManager = sc.nextInt();
+                        ageManager = Integer.parseInt(sc.nextLine());
                     }
                     System.out.println("Nhap vao he so luong:");
-                    double coefOfManager = sc.nextInt();
+                    double coefOfManager = Integer.parseInt(sc.nextLine());
                     while (coefOfManager < 0) {
                         System.out.println("Nhap lai he so luong:");
-                        coefOfManager = sc.nextInt();
+                        coefOfManager = Integer.parseInt(sc.nextLine());
                     }
                     System.out.println("Nhap vao ngay lam:");
                     String startDateOfManger = sc.nextLine();
@@ -352,7 +352,7 @@ public class Humanresource {
                         System.out.println("3. Nhan vien ban hang");
                         System.out.println("4. Nhan vien truyen thong");
                         System.out.println("5. Them bo phan moi");
-                        newDepartmentManager = sc.nextInt();
+                        newDepartmentManager = Integer.parseInt(sc.nextLine());
                         switch (newDepartmentManager) {
                             case 1:
                                 departmentManager = "Lap trinh vien";
@@ -378,10 +378,10 @@ public class Humanresource {
                         }
                     } while (newDepartmentManager < 1 || newDepartmentManager > 5);
                     System.out.println("Nhap so ngay nghi phep:");
-                    int leaveDayManager = sc.nextInt();
+                    int leaveDayManager = Integer.parseInt(sc.nextLine());
                     while (leaveDayManager < 0) {
                         System.out.println("Nhap lai ngay nghi phep:");
-                        leaveDayManager = sc.nextInt();
+                        leaveDayManager = Integer.parseInt(sc.nextLine());
                     }
                     System.out.println("Nhap chuc vu:");
                     sc.nextLine();
@@ -419,10 +419,10 @@ public class Humanresource {
             System.out.println("2. Tim Kiem theo ma so nhan vien");
             System.out.println("0. Tro lai menu chinh");
             System.out.println("");
-            infoTypeStaff = sc.nextInt();
+            infoTypeStaff = Integer.parseInt(sc.nextLine());
             while (infoTypeStaff < 0 || infoTypeStaff > 2) {
                 System.out.println("Nhap lai lua chon cua ban:");
-                infoTypeStaff = sc.nextInt();
+                infoTypeStaff = Integer.parseInt(sc.nextLine());
             }
             switch (infoTypeStaff) {
                 case 1:
