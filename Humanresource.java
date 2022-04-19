@@ -153,7 +153,7 @@ public class Humanresource {
     }
 
     // hiển thị nhân viên theo các bộ phận của công ty
-    public static void displayInfoStaffOfDepartment(ArrayList<Staff> totaStaff, Scanner sc) {
+    public static void displayInfoStaffOfDepartment(ArrayList<Staff> totalStaff, Scanner sc) {
         int allDepartment;
 
         do {
@@ -171,28 +171,28 @@ public class Humanresource {
             }
             switch (allDepartment) {
                 case 1:
-                    for (Staff iterable_element1 : totaStaff) {
+                    for (Staff iterable_element1 : totalStaff) {
                         if (iterable_element1.getStaffDepartment().equalsIgnoreCase("Lap trinh vien")) {
                             iterable_element1.toString();
                         }
                     }
                     break;
                 case 2:
-                    for (Staff iterable_element1 : totaStaff) {
+                    for (Staff iterable_element1 : totalStaff) {
                         if (iterable_element1.getStaffDepartment().equalsIgnoreCase("Ky thuat vien")) {
                             iterable_element1.toString();
                         }
                     }
                     break;
                 case 3:
-                    for (Staff iterable_element1 : totaStaff) {
+                    for (Staff iterable_element1 : totalStaff) {
                         if (iterable_element1.getStaffDepartment().equalsIgnoreCase("Nhan vien ban hang")) {
                             iterable_element1.toString();
                         }
                     }
                     break;
                 case 4:
-                    for (Staff iterable_element1 : totaStaff) {
+                    for (Staff iterable_element1 : totalStaff) {
                         if (iterable_element1.getStaffDepartment().equalsIgnoreCase("Nhan vien truyen thong")) {
                             iterable_element1.toString();
                         }
